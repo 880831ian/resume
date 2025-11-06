@@ -3,14 +3,11 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
+background: "./img/about_background.png"
 # some information about your slides (markdown enabled)
-title: Welcome to Slidev
+title: 莊品毅 CHUANG,PIN-YI (Ian) 履歷
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
+  展示莊品毅 CHUANG,PIN-YI (Ian) 履歷
 # apply UnoCSS classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
@@ -24,614 +21,201 @@ mdc: true
 duration: 35min
 ---
 
-# Welcome to Slidev
+<!-- 封面 -->
 
-Presentation slides for developers
+# 莊品毅 CHUANG,PIN-YI (Ian)
 
-<div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
+## System Architect / SRE
+
+專注雲端與自動化實務，致力推動企業打造穩定且可擴展的系統架構
+
+<div class="abs-br m-6 text-xl">
+  <a href="https://github.com/880831ian" target="_blank" class="slidev-icon-btn">
+    <carbon:logo-github />
+  </a>
+  <a href="https://pin-yi.me" target="_blank" class="slidev-icon-btn">
+    <carbon:link />
+  </a>
+  <a href="mailto:880831ian@gmail.com" class="slidev-icon-btn">
+    <carbon:email />
+  </a>  
+</div>
+
+---
+
+<!-- 第二頁 -->
+
+# 關於我
+
+<div class="flex justify-end">
+  <img v-click="1" src="./img/about.jpg" class="absolute top-37 left-165 w-50" />
+</div>
+
+<br>
+
+#### 🧱 專業背景 { v-click="2" }
+
+<br>
+
+<li v-click="3">具備近 4 年雲端架構與 SRE 經驗</li>
+
+<li v-click="4">熟悉 IaC 自動化與監控整合，具成本優化經驗</li>
+
+<li v-click="5">精通 Terraform、Helm、Kubernetes、Datadog</li>
+
+<li v-click="6">持續經營技術部落格，並活躍於社群</li>
+
+<br>
+
+#### 💡 個人特質 { v-click="7" }
+
+<br>
+
+<li v-click="8">主動解決問題、能獨立推動技術改善</li>
+
+<li v-click="9">重視架構一致性與自動化、能提升團隊效率</li>
+
+<li v-click="10">樂於學習與分享、促進團隊知識流通</li>
+
+---
+
+<!-- 第三頁 -->
+
+# 職涯經歷
+
+<div class="relative w-full mt-20">
+
+  <!-- timeline line -->
+  <div class="absolute top-10 left-0 w-full h-0.5 bg-gray-300" style="z-index: -1;"></div>
+
+  <!-- arrow -->
+  <div class="absolute top-8.2 right-0 w-0 h-0 
+              border-t-8 border-b-8 border-l-8 border-transparent 
+              border-l-gray-300">
+  </div>
+
+  <!-- 年份區塊 -->
+  <div class="w-full flex items-center justify-between mt-14">
+    <div class="text-center w-1/4" v-click="1">
+      <div class="text-lg font-bold mb-2">2022、2023</div>
+      <div class="mx-auto w-3 h-3 bg-blue-400 rounded-full shadow"></div>
+      <div class="mt-2 text-sm opacity-40">SRE @ 凡谷興業有限公司</div>
+    </div>
+    <div class="text-center w-1/4" v-click="6">
+      <div class="text-lg font-bold mb-2">2024</div>
+      <div class="mx-auto w-3 h-3 bg-blue-400 rounded-full shadow"></div>
+      <div class="mt-2 text-sm opacity-40">SRE、SA @ 凡谷興業有限公司</div>
+    </div>
+    <div class="text-center w-1/4" v-click="12">
+      <div class="text-lg font-bold mb-2">2025</div>
+      <div class="mx-auto w-3 h-3 bg-blue-400 rounded-full shadow"></div>
+      <div class="mt-2 text-sm opacity-40">SA @ 凡谷興業有限公司</div>
+    </div>    
+  </div>
+</div>
+
+<div class="w-full flex items-start justify-between mt-14">
+
+  <ul class="w-1/4 space-y-3 text-sm text-left">
+    <li v-click="2">管理 30 座以上 GKE 叢集約 500 個節點，平均每分鐘 100K 請求</li>
+    <li v-click="3">熟悉 GitLab CI、EFK、GMP、Grafana 建立 CI/CD 自動化及監控日誌系統</li>
+    <li v-click="4">主導 IaC 自動化與部署流程重構，維運效率提升約 <span v-mark.circle.orange="5">70%</span></li>
+  </ul>
+
+  <ul class="w-1/4 space-y-1.5 text-sm opacity-90 text-left">
+    <li v-click="7">導入 Datadog，查詢與問題定位提升 <span v-mark.circle.orange="8">90%</span></li>
+    <li v-click="9">優化 Prometheus 監控架構，不影響監控品質情境下，協助公司節省<span v-mark.underline.orange="9">每日約 USD 200 </span> 🔗</li>
+    <li v-click="10">主動追蹤 GCP 服務公告，撰寫對應方法以及 Shell Script，避免升級中斷並節省<span v-mark.underline.orange="11">約 USD 3,000 </span></li>
+  </ul>
+
+  <ul class="w-1/4 space-y-1.5 text-sm opacity-90 text-left">
+    <li v-click="13">設計及導入 500 人的 AWS Org、SSO、GCP 遷移 AWS Infra 架構</li>
+    <li v-click="14">開發<span v-mark.circle.orange="15"> 22 組 </span>AWS Terraform 模組，撰寫 45+ 篇技術文件</li>
+    <li v-click="16">雲端網路重構及 Internal DNS 導入</li>
+  </ul>
 </div>
 
 <div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
-  </a>
+  <a href="https://pin-yi.me/blog/gcp/gcp-prometheus-sample-ingested-calculate/" target="_blank" class="slidev-icon-btn">
+    <carbon:link />
+  </a> 
 </div>
 
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
-
----
-transition: fade-out
 ---
 
-# What is Slidev?
+<!-- 第四頁 -->
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+# 專案實績 - AWS Organizations + SSO、Infra 架構設計
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
--->
-
----
-transition: slide-up
-level: 2
----
-
-# Navigation
-
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
-
-## Keyboard Shortcuts
-
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
-
-<!-- https://sli.dev/guide/animations.html#click-animation -->
+<div class="relative flex justify-end">
 <img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
+    v-click="1"
+    v-show="$clicks == 1"
+    src="./img/aws-architecture.png"
+    class="absolute top--1 left-9 w-194 z-0"
 />
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
 
----
-layout: two-cols
-layoutClass: gap-16
----
-
-# Table of contents
-
-You can use the `Toc` component to generate a table of contents for your slides:
-
-```html
-<Toc minDepth="1" maxDepth="1" />
-```
-
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
-
-::right::
-
-<Toc text-sm minDepth="1" maxDepth="2" />
-
----
-layout: image-right
-image: https://cover.sli.dev
----
-
-# Code
-
-Use code snippets and get the highlighting directly, and even types hover!
-
-```ts [filename-example.ts] {all|4|6|6-7|9|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-import { computed, ref } from 'vue'
-
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
-
-doubled.value = 2
-```
-
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="342" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-
-[Learn more](https://sli.dev/features/line-highlighting)
-
-<!-- Inline style -->
-<style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
-
----
-level: 2
----
-
-# Shiki Magic Move
-
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
-
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
-
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
-
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
-```
-
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
-
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
-</script>
-```
-````
-
----
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
-```
+<img
+    v-click="2"
+    v-show="$clicks == 2"
+    src="./img/aws-nginx.png"
+    class="absolute top-4 left--2 w-290 z-10"
+/>
 
 </div>
 
 <br>
 
-<v-click>
+---
 
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
+<!-- 第五頁 -->
 
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
-
-</v-click>
-
-<div mt-20 v-click>
-
-[Learn more](https://sli.dev/guide/animations#click-animation)
-
-</div>
+# 專案實績 - Helm、Helmfile 自動化
 
 ---
 
-# Motions
+<!-- 第六頁 -->
 
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
-```
-
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn more](https://sli.dev/guide/animations.html#motion)
-
-</div>
+# 專案實績 - IaC Terraform、Terrgrunt 自動化
 
 ---
 
-# LaTeX
+<!-- 第七頁 -->
 
-LaTeX is supported out-of-box. Powered by [KaTeX](https://katex.org/).
+# 經營 Blog — 知識分享與成長
 
-<div h-3 />
+<li v-click="1">已經撰寫 86 篇技術文章，持續成長中</li>
 
-Inline $\sqrt{3x-1}+(1+x)^2$
+<li v-click="2">過去一年不重複訪客達<span v-mark.circle.orange="3"> 4666 人</span> (GA4 計算)</li>
 
-Block
-$$ {1|3|all}
-\begin{aligned}
-\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
-\nabla \cdot \vec{B} &= 0 \\
-\nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
-\nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
-\end{aligned}
-$$
+<li v-click="4">將部份文件範例程式碼開源，特定專案<span v-mark.underline.orange="5">累積 74 顆 Star 與 18 次 Fork</span> 🔗</li>
 
-[Learn more](https://sli.dev/features/latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
+<div class="relative flex">
+  <img
+    v-click="3"
+    v-show="$clicks == 3"
+    src="./img/ga4.jpg"
+    class="absolute top--5 left-9 w-120 z-0"
+/>
 </div>
 
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
+<div class="relative flex">
+  <img
+    v-click="6"
+    src="./img/blog.png"
+    class="absolute top-9 left--10 w-120 z-0"
+/>
+  <img
+    v-click="7"
+    src="./img/github.png"
+    class="absolute top-4 left-110 w-117 z-0"
+/>
+</div>
 
----
-foo: bar
-dragPos:
-  square: 691,32,167,_,-16
----
-
-# Draggable Elements
-
-Double-click on the draggable elements to edit their positions.
+<div class="abs-br m-6 text-xl">
+  <a href="https://github.com/880831ian/Prometheus-Grafana-Docker" target="_blank" class="slidev-icon-btn">
+    <carbon:link />
+  </a> 
+</div>
 
 <br>
-
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <div class="i-carbon:arrow-up" />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="663,206,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
-
----
-src: ./pages/imported-slides.md
-hide: false
----
-
----
-
-# Monaco Editor
-
-Slidev provides built-in Monaco Editor support.
-
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
-
-const arr = ref(emptyArray(10))
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
-
----
-layout: center
-class: text-center
----
-
-# Learn More
-
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
-
-<PoweredBySlidev mt-10 />
