@@ -182,11 +182,11 @@ duration: 35min
 
 <!-- 第七頁 -->
 
-# 經營 Blog — 知識分享與成長
+# 技術部落格經營 — 持續學習與知識分享
 
 <li v-click="1">已經撰寫 86 篇技術文章，持續成長中</li>
 
-<li v-click="2">過去一年不重複訪客達<span v-mark.circle.orange="3"> 4666 人</span> (GA4 計算)</li>
+<li v-click="2">今年截至 11 月，不重複訪客達<span v-mark.circle.orange="3"> 9300 人</span> (GA4 計算)</li>
 
 <li v-click="4">將部份文件範例程式碼開源，特定專案<span v-mark.underline.orange="5">累積 74 顆 Star 與 18 次 Fork</span> 🔗</li>
 
@@ -194,7 +194,7 @@ duration: 35min
   <img
     v-click="3"
     v-show="$clicks == 3"
-    src="/img/ga4.jpg"
+    src="/img/ga4.png"
     class="absolute top--5 left-9 w-120 z-0"
 />
 </div>
@@ -216,6 +216,41 @@ duration: 35min
   <a href="https://github.com/880831ian/Prometheus-Grafana-Docker" target="_blank" class="slidev-icon-btn">
     <carbon:link />
   </a> 
+</div>
+
+<br>
+
+---
+
+<!-- 第八頁 -->
+
+# 參與開源 — 從實務到社群
+
+<li v-click="1">2023 年 7 月起持續參與 GitHub 開源專案</li>
+
+<li v-click="2">聚焦在 SRE 與 DevOps 領域</li>
+
+<br>
+<br>
+
+#### 🔧 主要貢獻 { v-click="3" }
+
+<br>
+
+<li v-click="4"> AWS EKS Terraform IaC Module - #3376</li>
+<li v-click="5"> OpenTelemetry 官方文件 - #3096</li>
+
+<div class="relative flex">
+  <img
+    v-click="4"
+    src="/img/AWS-EKS-terraform-IaC-module.png"
+    class="absolute top--70 left-110 w-110 z-0"
+/>
+  <img
+    v-click="5"
+    src="/img/OpenTelemetry.png"
+    class="absolute top--1 left-110 w-110 z-0"
+/>
 </div>
 
 <br>
