@@ -3,7 +3,7 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: "./img/about_background.png"
+background: "/img/about_background.png"
 # some information about your slides (markdown enabled)
 title: 莊品毅 CHUANG,PIN-YI (Ian) 履歷
 info: |
@@ -48,7 +48,7 @@ duration: 35min
 # 關於我
 
 <div class="flex justify-end">
-  <img v-click="1" src="./img/about.jpg" class="absolute top-37 left-165 w-50" />
+  <img v-click="1" src="/img/about.jpg" class="absolute top-37 left-165 w-50" />
 </div>
 
 <br>
@@ -151,14 +151,14 @@ duration: 35min
 <img
     v-click="1"
     v-show="$clicks == 1"
-    src="./img/aws-architecture.png"
+    src="/img/aws-architecture.png"
     class="absolute top--1 left-9 w-194 z-0"
 />
 
 <img
     v-click="2"
     v-show="$clicks == 2"
-    src="./img/aws-nginx.png"
+    src="/img/aws-nginx.png"
     class="absolute top-4 left--2 w-290 z-10"
 />
 
@@ -194,7 +194,7 @@ duration: 35min
   <img
     v-click="3"
     v-show="$clicks == 3"
-    src="./img/ga4.jpg"
+    src="/img/ga4.jpg"
     class="absolute top--5 left-9 w-120 z-0"
 />
 </div>
@@ -202,12 +202,12 @@ duration: 35min
 <div class="relative flex">
   <img
     v-click="6"
-    src="./img/blog.png"
+    src="/img/blog.png"
     class="absolute top-9 left--10 w-120 z-0"
 />
   <img
     v-click="7"
-    src="./img/github.png"
+    src="/img/github.png"
     class="absolute top-4 left-110 w-117 z-0"
 />
 </div>
