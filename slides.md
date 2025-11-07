@@ -11,6 +11,7 @@ info: |
 # apply UnoCSS classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
+favicon: "https://pin-yi.me/favicon.svg"
 drawings:
   persist: false
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
@@ -43,7 +44,7 @@ duration: 35min
 
 ---
 
-<!-- 第二頁 -->
+<!-- 第 2 頁 -->
 
 # 關於我
 
@@ -79,7 +80,7 @@ duration: 35min
 
 ---
 
-<!-- 第三頁 -->
+<!-- 第 3 頁 -->
 
 # 職涯經歷
 
@@ -89,7 +90,7 @@ duration: 35min
   <div class="absolute top-10 left-0 w-full h-0.5 bg-gray-300" style="z-index: -1;"></div>
 
   <!-- arrow -->
-  <div class="absolute top-8.2 right-0 w-0 h-0 
+  <div class="absolute top-8.2 right--1 w-0 h-0 
               border-t-8 border-b-8 border-l-8 border-transparent 
               border-l-gray-300">
   </div>
@@ -106,7 +107,7 @@ duration: 35min
       <div class="mx-auto w-3 h-3 bg-blue-400 rounded-full shadow"></div>
       <div class="mt-2 text-sm opacity-40">SRE、SA @ 凡谷興業有限公司</div>
     </div>
-    <div class="text-center w-1/4" v-click="12">
+    <div class="text-center w-1/4" v-click="13">
       <div class="text-lg font-bold mb-2">2025</div>
       <div class="mx-auto w-3 h-3 bg-blue-400 rounded-full shadow"></div>
       <div class="mt-2 text-sm opacity-40">SA @ 凡谷興業有限公司</div>
@@ -123,15 +124,15 @@ duration: 35min
   </ul>
 
   <ul class="w-1/4 space-y-1.5 text-sm opacity-90 text-left">
-    <li v-click="7">導入 Datadog，查詢與問題定位提升 <span v-mark.circle.orange="8">90%</span></li>
-    <li v-click="9">優化 Prometheus 監控架構，不影響監控品質情境下，協助公司節省<span v-mark.underline.orange="9">每日約 USD 200 </span> 🔗</li>
-    <li v-click="10">主動追蹤 GCP 服務公告，撰寫對應方法以及 Shell Script，避免升級中斷並節省<span v-mark.underline.orange="11">約 USD 3,000 </span></li>
+    <li v-click="7">優化 Prometheus 監控架構，不影響監控品質情境下，協助公司節省<span v-mark.underline.orange="8">每日約 USD 200 </span> 🔗</li>
+    <li v-click="9">導入 Datadog，查詢與問題定位提升 <span v-mark.circle.orange="10">90%</span></li>
+    <li v-click="11">主動追蹤 GCP 服務公告，撰寫對應方法以及 Shell Script，避免升級中斷並節省<span v-mark.underline.orange="12">約 USD 3,000 </span></li>
   </ul>
 
   <ul class="w-1/4 space-y-1.5 text-sm opacity-90 text-left">
-    <li v-click="13">設計及導入 500 人的 AWS Org、SSO、GCP 遷移 AWS Infra 架構</li>
-    <li v-click="14">開發<span v-mark.circle.orange="15"> 22 組 </span>AWS Terraform 模組，撰寫 45+ 篇技術文件</li>
-    <li v-click="16">雲端網路重構及 Internal DNS 導入</li>
+    <li v-click="14">設計及導入 500 人的 AWS Org、SSO、GCP 遷移 AWS Infra 架構</li>
+    <li v-click="15">開發<span v-mark.circle.orange="16"> 22 組 </span>AWS Terraform 模組，撰寫 45+ 篇技術文件</li>
+    <li v-click="17">雲端網路重構及 Internal DNS 導入</li>
   </ul>
 </div>
 
@@ -143,7 +144,7 @@ duration: 35min
 
 ---
 
-<!-- 第四頁 -->
+<!-- 第 4 頁 -->
 
 # 專案實績 - AWS Organizations + SSO、Infra 架構設計
 
@@ -162,25 +163,58 @@ duration: 35min
     class="absolute top-4 left--2 w-290 z-10"
 />
 
+<img
+    v-click="3"
+    v-show="$clicks == 3"
+    src="/img/aws-internal.png"
+    class="absolute top--1 left-12 w-190 z-10"
+/>
+
+<img
+    v-click="4"
+    v-show="$clicks == 4"
+    src="/img/aws-static.png"
+    class="absolute top-1 left-30 w-160 z-10"
+/>
+
 </div>
 
-<br>
+---
+
+<!-- 第 5 頁 -->
+
+# 專案實績 - Helm、Terraform 模組開發、自動化設計
+
+<li v-click="1">IaC 模組開發</li>
+<li v-click="2">本地腳本開發</li>
+
+<div class="relative flex">
+  <img
+    v-click="1"
+    v-show="$clicks == 1"
+    src="/img/iac-modules.png"
+    class="absolute top--15 left-60 w-105 z-0"
+/>
+</div>
+
+<div class="relative flex">
+  <img
+    v-click="2"
+    v-show="$clicks == 2"
+    src="/img/iac-modules.png"
+    class="absolute top--15 left-60 w-105 z-0"
+/>
+</div>
 
 ---
 
-<!-- 第五頁 -->
+<!-- 第 6 頁 -->
 
-# 專案實績 - Helm、Helmfile 自動化
-
----
-
-<!-- 第六頁 -->
-
-# 專案實績 - IaC Terraform、Terrgrunt 自動化
+# 專案實績 - (補)
 
 ---
 
-<!-- 第七頁 -->
+<!-- 第 7 頁 -->
 
 # 技術部落格經營 — 持續學習與知識分享
 
@@ -188,7 +222,7 @@ duration: 35min
 
 <li v-click="2">今年截至 11 月，不重複訪客達<span v-mark.circle.orange="3"> 9300 人</span> (GA4 計算)</li>
 
-<li v-click="4">將部份文件範例程式碼開源，特定專案<span v-mark.underline.orange="5">累積 74 顆 Star 與 18 次 Fork</span> 🔗</li>
+<li v-click="4">將部份文件範例程式碼開源，特定專案<span v-mark.underline.orange="5">累積 75 顆 Star 與 18 次 Fork</span> 🔗</li>
 
 <div class="relative flex">
   <img
@@ -222,7 +256,7 @@ duration: 35min
 
 ---
 
-<!-- 第八頁 -->
+<!-- 第 8 頁 -->
 
 # 參與開源 — 從實務到社群
 
@@ -254,3 +288,66 @@ duration: 35min
 </div>
 
 <br>
+<br>
+<br>
+
+<span v-click="6" style="color: red"> 已成功合併至專案的主幹分支（main/master branch）</span>
+
+---
+
+<!-- 第 9 頁 -->
+
+# 專業認證 / 技能樹
+
+<div class="flex items-start">
+  <div class="relative w-130 h-80">
+    <img src="/img/pca.webp" class="absolute top-0 left-0 w-45 z-0" />
+    <img src="/img/rhce.webp" class="absolute top-37 left--0 w-45 z-0" />
+    <img src="/img/rhcsa.webp" class="absolute top-73 left--0 w-45 z-0" />
+  </div>
+
+  <!-- 右邊文字 -->
+  <ul class="ml--60 leading-relaxed mt-3">
+  證照
+    <li v-click="1">Google Cloud Professional Cloud Architect (PCA)  #2025/02</li>
+    <li v-click="1">RED HAT CERTIFIED ENGINEER (RHCE)  #2019/07</li>
+    <li v-click="1">RED HAT CERTIFIED SYSTEM ADMINISTRATOR (RHCSA)  #2019/01</li>
+    <li v-click="2">AWS Certified Solutions Architect – Associate (SAA)  #預計 2026/04 前</li>
+    <br>
+  技能樹
+    <li v-click="3">雲平台：GCP、AWS</li>
+    <li v-click="3">容器化：Kubernetes (GKE、EKS、OpenShift)、Docker</li>
+    <li v-click="3">IaC：Terraform、Terragrunt、Helm、Helmfile、Ansible</li>
+    <li v-click="3">CI/CD：GitLab CI、GitHub Action、Jenkins</li>  
+    <li v-click="3">監控與日誌：Datadog、Prometheus、Grafana、EFK、GMP</li>
+    <li v-click="3">程式語言：Shell Script</li>
+  </ul>
+</div>
+
+---
+
+<!-- 第 10 頁 -->
+
+<div class="h-65 w-full flex items-center justify-center text-6xl">
+  <span>Thank you / 感謝您的時間</span>
+</div>
+
+<div class="flex items-start">
+  <div class="relative w-1000">
+    <!-- Blog -->
+    <div class="absolute top--5 left-20 flex flex-col items-center">
+      <img src="/img/blog-qrcode.png" class="w-45 z-0" />
+      <span class="mt-2 text-lg">Blog（技術文章）</span>
+    </div>
+    <!-- GitHub -->
+    <div class="absolute top--5 left-83 flex flex-col items-center">
+      <img src="/img/github-qrcode.png" class="w-45 z-0" />
+      <span class="mt-2 text-lg">GitHub（專案 & 開源貢獻）</span>
+    </div>
+    <!-- Slidev -->
+    <div class="absolute top--5 left-146 flex flex-col items-center">
+      <img src="/img/slidev-qrcode.png" class="w-45 z-0" />
+      <span class="mt-2 text-lg">Slidev (本簡報以此開源工具製作)</span>
+    </div>
+  </div>
+</div>
