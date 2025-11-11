@@ -1,24 +1,15 @@
 ---
-# try also 'default' to start simple
 theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
 background: "/img/about_background.png"
-# some information about your slides (markdown enabled)
 title: 莊品毅 CHUANG,PIN-YI (Ian) 履歷
 info: |
   展示莊品毅 CHUANG,PIN-YI (Ian) 履歷
-# apply UnoCSS classes to the current slide
 class: text-center
-# https://sli.dev/features/drawing
 favicon: "https://pin-yi.me/favicon.svg"
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: slide-left
-# enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
-# duration of the presentation
 duration: 35min
 ---
 
@@ -59,11 +50,8 @@ duration: 35min
 <br>
 
 <li v-click="3">具備近 4 年雲端架構與 SRE 經驗</li>
-
 <li v-click="4">熟悉 IaC 自動化與監控整合，具成本優化經驗</li>
-
 <li v-click="5">精通 Terraform、Helm、Kubernetes、Datadog</li>
-
 <li v-click="6">持續經營技術部落格，並活躍於社群</li>
 
 <br>
@@ -73,9 +61,7 @@ duration: 35min
 <br>
 
 <li v-click="8">主動解決問題、能獨立推動技術改善</li>
-
 <li v-click="9">重視架構一致性與自動化、能提升團隊效率</li>
-
 <li v-click="10">樂於學習與分享、促進團隊知識流通</li>
 
 ---
@@ -85,38 +71,33 @@ duration: 35min
 # 職涯經歷
 
 <div class="relative w-full mt-20">
-
   <!-- timeline line -->
   <div class="absolute top-10 left-0 w-full h-0.5 bg-gray-300" style="z-index: -1;"></div>
 
   <!-- arrow -->
-  <div class="absolute top-8.2 right--1 w-0 h-0 
-              border-t-8 border-b-8 border-l-8 border-transparent 
-              border-l-gray-300">
-  </div>
+  <div class="absolute top-8.2 right--1 w-0 h-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-gray-300"></div>
 
   <!-- 年份區塊 -->
   <div class="w-full flex items-center justify-between mt-14">
     <div class="text-center w-1/4" v-click="1">
       <div class="text-lg font-bold mb-2">2022、2023</div>
       <div class="mx-auto w-3 h-3 bg-blue-400 rounded-full shadow"></div>
-      <div class="mt-2 text-sm opacity-40">SRE @ 凡谷興業有限公司</div>
+      <div class="mt-2 text-sm opacity-40">SRE @ 凡谷興業 (中佑)</div>
     </div>
     <div class="text-center w-1/4" v-click="6">
       <div class="text-lg font-bold mb-2">2024</div>
       <div class="mx-auto w-3 h-3 bg-blue-400 rounded-full shadow"></div>
-      <div class="mt-2 text-sm opacity-40">SRE、SA @ 凡谷興業有限公司</div>
+      <div class="mt-2 text-sm opacity-40">SRE、SA @ 凡谷興業 (中佑)</div>
     </div>
     <div class="text-center w-1/4" v-click="13">
       <div class="text-lg font-bold mb-2">2025</div>
       <div class="mx-auto w-3 h-3 bg-blue-400 rounded-full shadow"></div>
-      <div class="mt-2 text-sm opacity-40">SA @ 凡谷興業有限公司</div>
+      <div class="mt-2 text-sm opacity-40">SA @ 凡谷興業 (中佑)</div>
     </div>    
   </div>
 </div>
 
 <div class="w-full flex items-start justify-between mt-14">
-
   <ul class="w-1/4 space-y-3 text-sm text-left">
     <li v-click="2">管理 30 座以上 GKE 叢集約 500 個節點，平均每分鐘 100K 請求</li>
     <li v-click="3">熟悉 GitLab CI、EFK、GMP、Grafana 建立 CI/CD 自動化及監控日誌系統</li>
@@ -183,17 +164,18 @@ duration: 35min
 
 <!-- 第 5 頁 -->
 
-# 專案實績 - Helm、Terraform 模組開發、自動化設計
+# 專案實績 - Terraform、Helm 模組開發、自動化設計
 
-<li v-click="1">IaC 模組開發</li>
-<li v-click="2">本地腳本開發</li>
+<li v-click="1">IaC 模組開發 (Terragrunt 舉例)</li>
+<li v-click="2">本地腳本開發 (Helmfile 舉例)</li>
+<li v-click="3">自動化流程設計 (Helmfile、Terragrunt + GitLab CI)</li>
 
 <div class="relative flex">
   <img
     v-click="1"
     v-show="$clicks == 1"
     src="/img/iac-modules.png"
-    class="absolute top--15 left-60 w-105 z-0"
+    class="absolute top--24 left-75 w-105 z-0"
 />
 </div>
 
@@ -201,8 +183,26 @@ duration: 35min
   <img
     v-click="2"
     v-show="$clicks == 2"
-    src="/img/iac-modules.png"
-    class="absolute top--15 left-60 w-105 z-0"
+    src="/img/helmfile-script.png"
+    class="absolute top--2 left-20 w-195 z-0"
+/>
+</div>
+
+<div class="relative flex">
+  <img
+    v-click="3"
+    v-show="$clicks == 3"
+    src="/img/helmfile-gitlab-ci.png"
+    class="absolute top-5 left-0 w-250 z-0"
+/>
+</div>
+
+<div class="relative flex">
+  <img
+    v-click="3"
+    v-show="$clicks == 3"
+    src="/img/terragrunt-gitlab-ci.png"
+    class="absolute top-45 left-0 w-250 z-0"
 />
 </div>
 
@@ -210,7 +210,98 @@ duration: 35min
 
 <!-- 第 6 頁 -->
 
-# 專案實績 - (補)
+# 專案實績 - Terraform、Helm 模組開發、自動化設計
+
+<li>自動化流程設計 (Helmfile、Terragrunt + GitLab CI) 程式說明 / 說明檔案： <span>{{ $clicks < 4 ? '.gitlab-ci.yml' : '.generate_job.sh' }}</span></li>
+
+````md magic-move {lines: true}
+```yaml
+git-diff:
+  stage: git-diff
+  script:
+    # 先判斷是否為 main 分支，如果是就取前一次的 commit sha，否則就取 origin/main 的 commit sha
+    - |
+      if [ "$CI_COMMIT_BRANCH" == "main" ]; then
+        LAST_COMMIT_SHA=$(git rev-parse HEAD~1)
+      else
+        LAST_COMMIT_SHA=$(git fetch origin && git rev-parse origin/main)
+      fi
+    # 先判斷 modules/ 下是否有檔案被修改
+    - MODULES_CHANGED_FILES=$(git diff --name-only ${LAST_COMMIT_SHA} ${CI_COMMIT_SHA} -- ${CI_PR... (太長省略)
+```
+
+```yaml
+- |
+  if [ -z "$MODULES_CHANGED_FILES" ]; then
+    echo "沒有任何 modules 檔案被修改！"
+    # 如果沒有 modules 檔案被修改，就取 projects/ 下的檔案是否有被修改
+    echo "檢查 hcl 檔案是否異動"
+    CHANGED_FILES=$(git diff --name-only ${LAST_COMMIT_SHA} ${CI_COMMIT_SHA} -- ${CI_PROJECT_DIR}/projects/)
+    if [ -z "$CHANGED_FILES" ]; then
+      echo "沒有任何 hcl 檔案被修改！"
+    else
+      echo -e "本次異動 hcl 檔案：\n${CHANGED_FILES}"
+    fi
+  else
+    ... 太長省略 ...
+   # 針對同時有調整 module 以及 hcl 進行檢查及整理，且如果是調整 module 會隨機列出使用該 module 的 hcl 檔案)
+```
+
+```yaml
+- |
+  PROJECT_URL=$(echo "$CHANGED_FILES" | awk -F'/' '/projects\/[^\/]+\/.*\/(terragrunt\.hcl|.*\.tf)/ ... (太長省略)
+  PROJECT_URL=$(echo $PROJECT_URL | sed 's/ /,/g')
+  echo -e "最終結果：\n"${PROJECT_URL}
+- |
+  if [ "$CI_PIPELINE_SOURCE" == "merge_request_event" ]; then
+    ./generate_job.sh ${PROJECT_URL} plan
+  else
+    ./generate_job.sh ${PROJECT_URL}
+  fi
+```
+
+```yaml
+artifacts:
+  paths:
+    - job.yml
+  expire_in: "3600"
+```
+
+```shell
+generate_job() {
+  echo "${PROJECT_URL}:
+  stage: plan(異動 modules 則隨機抽樣)
+  script:
+    - cd projects/${PROJECT_URL}
+    - terragrunt validate
+    - terragrunt refresh 1>/dev/null
+    - |
+      # 執行資訊
+      echo -e \"========================== 請確認下方異動內容，是否正確 ==========================\n\"
+    - terragrunt plan -out=tfplan
+  artifacts:
+    paths:
+      - projects/${PROJECT_URL}
+    expire_in: \"3600\"
+  " >>job.yml
+```
+
+```shell
+  if [ "${stage}" = "apply" ]; then
+    echo "apply：${PROJECT_URL}:
+  stage: apply
+  script:
+    - cd projects/${PROJECT_URL}
+    - echo 'y' | terragrunt apply tfplan
+  dependencies:
+    - ${PROJECT_URL}
+  needs:
+    - ${PROJECT_URL}
+  when: manual
+  " >>job.yml
+  fi
+```
+````
 
 ---
 
@@ -218,10 +309,8 @@ duration: 35min
 
 # 技術部落格經營 — 持續學習與知識分享
 
-<li v-click="1">已經撰寫 86 篇技術文章，持續成長中</li>
-
+<li v-click="1">已經撰寫 86 篇技術文章，持續增加中</li>
 <li v-click="2">今年截至 11 月，不重複訪客達<span v-mark.circle.orange="3"> 9300 人</span> (GA4 計算)</li>
-
 <li v-click="4">將部份文件範例程式碼開源，特定專案<span v-mark.underline.orange="5">累積 75 顆 Star 與 18 次 Fork</span> 🔗</li>
 
 <div class="relative flex">
@@ -249,10 +338,8 @@ duration: 35min
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/880831ian/Prometheus-Grafana-Docker" target="_blank" class="slidev-icon-btn">
     <carbon:link />
-  </a> 
+  </a>
 </div>
-
-<br>
 
 ---
 
@@ -261,7 +348,6 @@ duration: 35min
 # 參與開源 — 從實務到社群
 
 <li v-click="1">2023 年 7 月起持續參與 GitHub 開源專案</li>
-
 <li v-click="2">聚焦在 SRE 與 DevOps 領域</li>
 
 <br>
@@ -318,7 +404,7 @@ duration: 35min
     <li v-click="3">雲平台：GCP、AWS</li>
     <li v-click="3">容器化：Kubernetes (GKE、EKS、OpenShift)、Docker</li>
     <li v-click="3">IaC：Terraform、Terragrunt、Helm、Helmfile、Ansible</li>
-    <li v-click="3">CI/CD：GitLab CI、GitHub Action、Jenkins</li>  
+    <li v-click="3">CI/CD：GitLab CI、GitHub Action、Jenkins</li>
     <li v-click="3">監控與日誌：Datadog、Prometheus、Grafana、EFK、GMP</li>
     <li v-click="3">程式語言：Shell Script</li>
   </ul>
