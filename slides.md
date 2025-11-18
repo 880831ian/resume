@@ -19,7 +19,7 @@ duration: 35min
 
 ## System Architect / SRE
 
-專注雲端與自動化實務，致力推動企業打造穩定且可擴展的系統架構
+專長雲端架構、SRE、自動化，協助企業打造高可用與可擴展的系統架構
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/880831ian" target="_blank" class="slidev-icon-btn">
@@ -309,9 +309,9 @@ generate_job() {
 
 # 技術部落格經營 — 持續學習與知識分享
 
-<li v-click="1">已經撰寫 86 篇技術文章，持續增加中</li>
+<li v-click="1">已經撰寫 88 篇技術文章，持續增加中</li>
 <li v-click="2">今年截至 11 月，不重複訪客達<span v-mark.circle.orange="3"> 9300 人</span> (GA4 計算)</li>
-<li v-click="4">將部份文件範例程式碼開源，特定專案<span v-mark.underline.orange="5">累積 75 顆 Star 與 18 次 Fork</span> 🔗</li>
+<li v-click="4">將部份文件範例程式碼開源，特定專案<span v-mark.underline.orange="5">累積 77 顆 Star 與 18 次 Fork</span> 🔗</li>
 
 <div class="relative flex">
   <img
@@ -331,7 +331,7 @@ generate_job() {
   <img
     v-click="7"
     src="/img/github.png"
-    class="absolute top-4 left-110 w-117 z-0"
+    class="absolute top-12 left-110 w-117 z-0"
 />
 </div>
 
