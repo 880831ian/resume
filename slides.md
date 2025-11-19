@@ -51,7 +51,7 @@ duration: 35min
 
 <li v-click="3">具備近 4 年雲端架構與 SRE 經驗</li>
 <li v-click="4">熟悉 IaC 自動化與監控整合，具成本優化經驗</li>
-<li v-click="5">精通 Terraform、Helm、Kubernetes、Datadog</li>
+<li v-click="5">精通 Terraform、Helm、Kubernetes、Datadog、Shell Script</li>
 <li v-click="6">持續經營技術部落格，並活躍於社群</li>
 
 <br>
@@ -212,7 +212,7 @@ duration: 35min
 
 # 專案實績 - Terraform、Helm 模組開發、自動化設計
 
-<li>自動化流程設計 (Helmfile、Terragrunt + GitLab CI) 程式說明 / 說明檔案： <span>{{ $clicks < 4 ? '.gitlab-ci.yml' : '.generate_job.sh' }}</span></li>
+<li>自動化流程設計 (Helmfile、Terragrunt + GitLab CI) 程式說明 / 說明檔案： <span>{{ $clicks < 3 ? '.gitlab-ci.yml' : '.generate_job.sh' }}</span></li>
 
 ````md magic-move {lines: true}
 ```yaml
@@ -258,13 +258,6 @@ git-diff:
   else
     ./generate_job.sh ${PROJECT_URL}
   fi
-```
-
-```yaml
-artifacts:
-  paths:
-    - job.yml
-  expire_in: "3600"
 ```
 
 ```shell
@@ -383,7 +376,7 @@ generate_job() {
 
 <!-- 第 9 頁 -->
 
-# 專業認證 / 技能樹
+# 專業證照 / 技能樹
 
 <div class="flex items-start">
   <div class="relative w-130 h-80">
